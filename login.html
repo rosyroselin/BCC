@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>ICICI Bank - Instant Business Credit Card</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> 
+	<link type="text/css" href="css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  	<!--Header Start-->
+	<header>
+		<div class="container-fluid top-bg">
+            <div class="row">
+                <div class="col-sm-3 col-md-3">
+                    <div class="logo"><a href="index.html"><img alt="ICICI Bank" src="images/logo.png" /></a></div>
+                </div>
+                <div class="col-sm-9 col-md-9 pr-0"><h1>Instant Business Credit Cards</h1></div>
+            </div>
+		</div>
+	</header>
+	<!--Header End-->
+	
+	<!--Main Start-->
+   	<main>
+		<div class="login-page">
+			<div class="cards">
+				<div class="cards__container">
+					<div class="cards__front card-1"></div>
+					<div class="cards__back card-2"></div>
+				</div>
+			</div>
+		</div>
+        <div class="login-box">
+		<h2>Apply Now</h2>
+		<div class="login-container box box-shadow">
+        <form class="">
+            <fieldset class="login-form">
+            <div class="row">
+                <div class="col-sm-12 col-md-8"> I have an ICICI Bank Current Account </div>
+                <div class="col-sm-12 col-md-4 text-right">
+                    <div class="form-check">
+                        <input id="radio1" name="group1" value="yes" type="radio">
+                        <label for="radio1"> Yes</label>
+                        
+                        <input id="radio2" name="group1" value="no" type="radio">
+                        <label for="radio2"> No</label>
+                    </div>
+                </div>
+            </div>
+            </fieldset>
+            <!--Current Account Yes option-->
+            <hr>
+            <div id="internetDiv">
+                <fieldset class="login-form">
+                <div class="row">
+                    <div class="col-sm-8"> Do you have an ICICI Bank Corporate Internet Banking Login / Debit Card? </div>
+                    <div class="col-sm-4 text-right">
+                        <div class="form-check">
+                            <input name="group2" id="radio3" value="yes" type="radio">
+                            <label for="radio3"> Yes</label>
+                            <input name="group2" id="radio4" value="no" type="radio">
+                            <label for="radio4"> No</label>
+                        </div>
+                    </div>
+                </div>
+                </fieldset>
+                <div id="existingDiv" hidden>
+                    <ul class="tabs">
+                        <li class="active" rel="tab1">Corporate Internet Banking</li>
+                        <li rel="tab2" class="tab_last">Debit Card Login</li>
+                    </ul>
+                    
+                    <div class="tab_container">
+                        <!--Tab 1 Start-->
+                        <div class="tab_drawer_heading d_active" rel="tab1">Corporate Internet Banking</div>
+                        <div id="tab1" class="tab_content" style="display: block;">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder=" " required />
+                                <label>User Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="password" placeholder=" " required />
+                                <label>Password</label>
+                            </div>
+                            <div class="captcha">
+                                <div class="row">
+                                    <div class="col-sm-5"><label><img src="images/captcha.png"></label></div>
+                                    <div class="col-sm-2"><label><img src="images/refresh.png"></label></div>
+                                    <div class="col-sm-5">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder=" " />
+                                            <label>Type Code Here</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Tab 1 End-->
+                    
+                        <!--Tab 2 Start-->
+                        <div class="tab_drawer_heading" rel="tab2">Debit Card Login</div>
+                        <div id="tab2" class="tab_content">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder=" " required />
+                                <label>Enter 16 digit Debit card number (XXXX XXXX XXXX XXXX)</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="number" placeholder=" " required />
+                                <label>PIN</label>
+                            </div>
+                            <div class="captcha">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-5"><label><img src="images/captcha.png" class="img-fluid"></label></div>
+                                    <div class="col-sm-12 col-md-2"><label><img src="images/refresh.png"></label></div>
+                                    <div class="col-sm-12 col-md-5">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder=" " />
+                                            <label>Type Code Here</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Tab 2 End-->
+                	<hr>
+                    </div>
+                    <!-- .tab_container -->
+                
+                <div class="row authorize">
+                    <div class="col-sm-1 text-center"><input type="checkbox"></div>
+                    <div class="col-sm-11 text-justify">I hereby authorize ICICI Bank and its representative to contact on the registered mobile number and email-address. This consent shall override any registration for DND (if applicable).</div>
+                </div>
+                <div class="text-center"><input type="button" class="insta-card-button" onclick="window.location.href='index.html';" value="LOGIN"></div>
+                </div>
+            </div>
+            
+            <!--Current Account No option-->
+            <div id="notExistDiv" hidden>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder=" " required />
+                    <label>Mobile Number</label>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" placeholder=" " required />
+                    <label>OTP Verification</label>
+                </div>
+                <div class="text-center"><input type="button" class="insta-card-button" value="Send OTP"></div>
+            </div>
+            <hr>
+            <div class="text-justify">
+            <b>Disclaimer:</b>
+            <p>Terms & Conditions Apply. The grant of overdraft facility is at the absolute discretion of ICICI Bank ("Bank") and is subject to submission of requisite documents and meeting Bank's eligibility criteria. The Bank reserves the right, at any time, to modify/alter any of the terms & conditions of the facility. The applicant authorizes the Bank to assess the Credit Bureau report of the Entity/ Proprietors.</p>
+            </div>
+        </form>
+        </div>
+		</div>
+		
+    </main>
+	<!--Main End-->
+	<!--Footer Start-->
+	<footer>
+		<div class="container-fluid">
+			<div class="row footer">Powered by Servosys Solutions</div>
+		</div>
+	</footer>
+	<!--Footer End-->
+    </body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</html>
